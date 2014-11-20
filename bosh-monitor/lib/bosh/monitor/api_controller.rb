@@ -26,10 +26,6 @@ module Bosh::Monitor
       content_type(:json)
       Yajl::Encoder.encode(Bhm.varz, :terminator => "\n")
     end
-
-    get "/healthz" do
-      200
-    end
   end
 
 end

@@ -88,6 +88,9 @@ module Bosh::Monitor
         map "/" do
           run Bhm::ApiController.new
         end
+        map "/healthz" do
+          run Bhm::ThinHealth.new
+        end
       end
       @http_server.start!
     end

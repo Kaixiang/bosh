@@ -46,6 +46,7 @@ require 'bosh/monitor/event_processor'
 
 # HTTP endpoints
 require 'bosh/monitor/api_controller'
+require 'bosh/monitor/thin_health'
 
 # Protocols
 require 'bosh/monitor/protocols/tsdb'
